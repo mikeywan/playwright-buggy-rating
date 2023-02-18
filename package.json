@@ -1,0 +1,26 @@
+{
+  "name": "playwright-buggy-rating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "env:dev:sanity": "cross-env test_env=dev npx playwright test --grep @sanity",
+    "env:dev:regression": "cross-env test_env=dev npx playwright test --grep @regression",
+    "env:test:sanity": "cross-env test_env=test npx playwright test --grep @sanity",
+    "env:test:regression": "cross-env test_env=test npx playwright test --grep @regression",
+    "env:staging:sanity": "cross-env test_env=staging npx playwright test --grep @sanity",
+    "env:staging:regression": "cross-env test_env=staging npx playwright test --grep @regression",
+    "env:prod:sanity": "cross-env test_env=prod npx playwright test --grep @sanity",
+    "env:prod:regression": "cross-env test_env=prod npx playwright test --grep @regression"
+  },
+  "keywords": [],
+  "author": "Mikey Wan",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
