@@ -9,14 +9,20 @@ Steps to run this framework:
    $git checkout master
    
    $git pull
+
 3. Install playwright and devepencies from folder playwright-buggy-rating
    
    $npm install
+
 4. Run ui regression test
    
    $npm run env:test:regression
+   
+5. View report
+   
+   $npx playwright show-report
 
-5. CI support
+6. CI support
    
    a. Install docker desktop from https://www.docker.com/products/docker-desktop
    
