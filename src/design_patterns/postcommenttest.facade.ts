@@ -3,6 +3,7 @@ import getComment from "../utils/getComment";
 
 let comment = getComment();
 
+// post comment test case
 export default class PostCommentTest{
     readonly pageObject: PopularMakePage;
     constructor(popularMakePageObject: PopularMakePage) {

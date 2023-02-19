@@ -1,3 +1,4 @@
+// data enum of environment
 export default class ENV{
     public static BASE_URL = process.env.BASE_URL !== undefined ? process.env.BASE_URL : 'https://buggy.justtestit.org/';
     public static USERNAME = process.env.USERNAME !== undefined ? process.env.USERNAME : '_MW';

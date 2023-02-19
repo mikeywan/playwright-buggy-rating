@@ -4,6 +4,7 @@ import ENV from "../utils/env";
 let password = ENV.PASSWORD;
 let newPassword = ENV.NEW_PASSWORD;
 
+// reset user password test case
 export default class ResetPasswordTest {
     readonly pageObject: ProfilePage;
     constructor(profilePageObject: ProfilePage) {
@@ -11,6 +12,7 @@ export default class ResetPasswordTest {
     }
 
     async run() {
+        // reset password
         await this.pageObject.gotoProfilePage();
         await this.pageObject.enterPassword(password);
         await this.pageObject.enterNewPassword(newPassword);
@@ -18,6 +20,7 @@ export default class ResetPasswordTest {
         await this.pageObject.clickSaveButton();
         await this.pageObject.verifyPasswordResetStatus();
 
+        // password reset back
         await this.pageObject.gotoMainPage();
         await this.pageObject.gotoProfilePage();
         await this.pageObject.enterPassword(newPassword);

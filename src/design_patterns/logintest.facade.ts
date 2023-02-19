@@ -6,6 +6,7 @@ let username = getUsername();
 let firstname = ENV.FIRSTNAME;
 let password = ENV.PASSWORD;
 
+// login test case
 export default class LoginTest{
     readonly pageObject: LoginPage;
     constructor(loginPageObject: LoginPage) {

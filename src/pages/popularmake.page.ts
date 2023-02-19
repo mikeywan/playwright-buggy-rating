@@ -1,7 +1,7 @@
 import { expect, Page } from "@playwright/test";
 import Wrapper from "../base/Wrapper";
-import ENV from "../utils/env";
 
+// popular make page object
 export default class PopularMakePage extends Wrapper {
     constructor(public page: Page) {
         super(page);

@@ -22,6 +22,7 @@ let logoutTest: LogoutTest;
 let postCommentTest: PostCommentTest;
 let resetPasswordTest: ResetPasswordTest;
 
+// initialization of page objects and test variables
 test.beforeAll(async () => {
     browser = await chromium.launch();
     const context = await browser.newContext();
@@ -39,6 +40,7 @@ test.beforeAll(async () => {
     resetPasswordTest = new ResetPasswordTest(profilePage);
 });
 
+// test cases group
 test.describe('Buggy Rating Testing', () => {
     test.beforeEach(async () => {
     });

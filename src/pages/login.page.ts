@@ -2,6 +2,7 @@ import { Page, expect } from "@playwright/test";
 import Wrapper from "../base/Wrapper";
 import ENV from "../utils/env";
 
+// login page object
 export default class LoginPage extends Wrapper {
     constructor(public page: Page) {
         super(page);
